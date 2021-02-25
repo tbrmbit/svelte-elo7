@@ -1,8 +1,8 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import successkid from '../assets/david.png';
 </script>
 
-<style>
+<style lang="scss">
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
@@ -37,7 +37,7 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Elo7 | Produtos Fora de Série</title>
 </svelte:head>
 
 <h1>Great success!</h1>

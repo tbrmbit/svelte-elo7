@@ -1,3 +1,4 @@
+const sveltePreprocess = require('svelte-preprocess');
 const webpack = require('webpack');
 const WebpackModules = require('webpack-modules');
 const path = require('path');
@@ -17,6 +18,12 @@ const fileLoaderRule = {
 	]
 };
 
+const preprocess = sveltePreprocess({
+  scss: {
+    includePaths: ['src'],
+  },
+});
+
 module.exports = {
 	client: {
 		entry: config.client.entry(),
@@ -31,7 +38,8 @@ module.exports = {
 						options: {
 							dev,
 							hydratable: true,
-							hotReload: false // pending https://github.com/sveltejs/svelte/issues/2377
+							hotReload: false, // pending https://github.com/sveltejs/svelte/issues/2377
+							preprocess
 						}
 					}
 				},
@@ -66,7 +74,8 @@ module.exports = {
 							css: false,
 							generate: 'ssr',
 							hydratable: true,
-							dev
+							dev,
+							preprocess
 						}
 					}
 				},
