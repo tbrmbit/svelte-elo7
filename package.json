@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "Svelte-elo7",
+  "description": "Testing to understand Svelte lib",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
