@@ -1,38 +1,19 @@
 <script>
-	import successkid from '../assets/david.png';
+	import Header from '../components/Header.svelte';
 </script>
 
 <style lang="scss">
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
+	@import '~flexboxgrid/css/flexboxgrid.min.css';
+	.container {
 		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
+		max-width: 960px;
+		margin-right: auto;
+    margin-left: auto;
+		padding-right: 1rem;
+    padding-left: 1rem;
+		box-sizing: border-box;
 	}
-
-	p {
-		margin: 1em auto;
-	}
-
 	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
 	}
 </style>
 
@@ -40,7 +21,14 @@
 	<title>Elo7 | Produtos Fora de Série</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<div class="container">
+	<div class="row">
+		<Header></Header>
+	</div>
+</div>
+
+
+<!-- <h1>Great success!</h1>
 
 <figure>
 	<img alt="Success Kid" src="{successkid}">
@@ -48,3 +36,4 @@
 </figure>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+ -->
