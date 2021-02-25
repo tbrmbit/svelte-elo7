@@ -1,5 +1,8 @@
 <script>
 	import Header from '../components/Header.svelte';
+	import BlockLink from '../components/BlockLink.svelte';
+
+	const lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum praesentium animi numquam consequatur, distinctio quam eligendi architecto, harum deserunt, dolor alias maxime ea! Quae dolores quibusdam inventore repellat eum?';
 </script>
 
 <style lang="scss">
@@ -23,7 +26,12 @@
 
 <div class="container">
 	<div class="row">
-		<Header></Header>
+		<Header description={lorem}></Header>
+		<BlockLink link_name={'Vagas em aberto'}></BlockLink>
+
+		<main>
+			
+		</main>
 	</div>
 </div>
 

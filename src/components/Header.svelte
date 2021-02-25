@@ -1,5 +1,7 @@
 <script>
   import headerImage from "../assets/foto-header.png";
+
+  export let description;
 </script>
 
 <style lang="scss">
@@ -33,4 +35,8 @@
   <figure>
     <img alt="trabalhe no ELO7" src="{headerImage}">
   </figure>
+
+  {#if description}
+    <p>{description}</p>
+  {/if}
 </header>
