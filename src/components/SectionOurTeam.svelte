@@ -12,8 +12,6 @@
 </script>
 
 <style lang="scss">
-  @import 'variables.scss';
-
   .section-our-team {
     h2 {
       max-width: 250px;

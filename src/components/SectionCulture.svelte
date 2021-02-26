@@ -13,8 +13,6 @@
 </script>
 
 <style lang="scss">
-  @import 'variables.scss';
-
   .section-culture {
     margin: 50px 0;
     &__item {

@@ -5,7 +5,6 @@
 </script>
 
 <style lang="scss">
-  @import 'variables.scss';
   header {
     position: relative;
 

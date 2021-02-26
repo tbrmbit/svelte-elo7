@@ -3,7 +3,6 @@
 </script>
 
 <style lang="scss">
-  @import 'variables.scss';
   $gap: 20px;
 
   .thumb-description {

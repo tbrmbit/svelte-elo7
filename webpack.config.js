@@ -19,9 +19,13 @@ const fileLoaderRule = {
 };
 
 const preprocess = sveltePreprocess({
+	defaults: {
+		style: 'scss'
+	},
   scss: {
 		postcss: true,
     includePaths: ['src'],
+		prependData: `@import 'src/variables.scss';`
   },
 });
 

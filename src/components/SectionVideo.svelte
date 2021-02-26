@@ -4,8 +4,6 @@
 </script>
 
 <style lang="scss">
-  @import 'variables.scss';
-  
   .section-video {
     margin-bottom: 40px;
 

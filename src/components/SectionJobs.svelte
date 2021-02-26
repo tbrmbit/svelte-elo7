@@ -21,7 +21,6 @@
 </script>
 
 <style lang="scss">
-  @import 'variables.scss';
   $fsize: 1.2em;
 
   .section-jobs {

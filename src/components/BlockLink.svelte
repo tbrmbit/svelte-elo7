@@ -3,7 +3,6 @@
 </script>
 
 <style lang="scss">
-  @import 'variables.scss';
   @mixin arrow-left {
     border: solid $lightgreen;
     border-width: 0 2px 2px 0;
