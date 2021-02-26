@@ -3,6 +3,8 @@
 	import BlockLink from '../components/BlockLink.svelte';
 	import SectionVideo from '../components/SectionVideo.svelte';
 	import SectionOurTeam from '../components/SectionOurTeam.svelte';
+	import SectionCulture from '../components/SectionCulture.svelte';
+	import SectionBanner from '../components/SectionBanner.svelte';
 
 	const lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum praesentium animi numquam consequatur, distinctio quam eligendi architecto, harum deserunt, dolor alias maxime ea! Quae dolores quibusdam inventore repellat eum?';
 </script>
@@ -53,6 +55,13 @@
 			<SectionVideo></SectionVideo>
 			<SectionOurTeam></SectionOurTeam>
 		</div>
+	</div>
+	<div class="container">
+		<SectionCulture></SectionCulture>
+		<BlockLink link_name={'Saiba Mais'}></BlockLink>
+	</div>
+	<div class="container">
+		<SectionBanner></SectionBanner>
 	</div>
 </div>
 
