@@ -20,6 +20,7 @@ const fileLoaderRule = {
 
 const preprocess = sveltePreprocess({
   scss: {
+		postcss: true,
     includePaths: ['src'],
   },
 });
