@@ -2,6 +2,7 @@
 	import Header from '../components/Header.svelte';
 	import BlockLink from '../components/BlockLink.svelte';
 	import SectionVideo from '../components/SectionVideo.svelte';
+	import SectionOurTeam from '../components/SectionOurTeam.svelte';
 
 	const lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum praesentium animi numquam consequatur, distinctio quam eligendi architecto, harum deserunt, dolor alias maxime ea! Quae dolores quibusdam inventore repellat eum?';
 </script>
@@ -50,6 +51,7 @@
 	<div class="container-fluid container-fluid--gray">
 		<div class="container">
 			<SectionVideo></SectionVideo>
+			<SectionOurTeam></SectionOurTeam>
 		</div>
 	</div>
 </div>
