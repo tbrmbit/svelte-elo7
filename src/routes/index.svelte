@@ -5,6 +5,7 @@
 	import SectionOurTeam from '../components/SectionOurTeam.svelte';
 	import SectionCulture from '../components/SectionCulture.svelte';
 	import SectionBanner from '../components/SectionBanner.svelte';
+	import SectionJobs from '../components/SectionJobs.svelte';
 
 	const lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum praesentium animi numquam consequatur, distinctio quam eligendi architecto, harum deserunt, dolor alias maxime ea! Quae dolores quibusdam inventore repellat eum?';
 </script>
@@ -62,16 +63,6 @@
 	</div>
 	<div class="container">
 		<SectionBanner></SectionBanner>
+		<SectionJobs></SectionJobs>
 	</div>
 </div>
-
-
-<!-- <h1>Great success!</h1>
-
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
- -->
