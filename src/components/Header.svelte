@@ -10,7 +10,7 @@
     position: relative;
 
     .header__description {
-      padding: 30px;
+      padding: 20px 30px;
     }
   }
   h1 {
