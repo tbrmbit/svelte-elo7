@@ -29,6 +29,11 @@
 
 			.container {
 				padding: $gutter;
+
+				@media only screen and (max-width: 1024px) {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
 			}
 
 			&--gray {
@@ -37,8 +42,6 @@
 		}
 	}
 	
-	@media (min-width: 480px) {
-	}
 </style>
 
 <svelte:head>

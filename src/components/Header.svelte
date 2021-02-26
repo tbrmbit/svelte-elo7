@@ -5,18 +5,32 @@
 </script>
 
 <style lang="scss">
+  @import 'variables.scss';
   header {
     position: relative;
+
+    .header__description {
+      padding: 30px;
+    }
   }
   h1 {
     font-size: clamp(1.3em, 2.7vw, 4em); /* reference: https://css-tricks.com/simplified-fluid-typography/ */
     position: absolute;
-    bottom: 23%;
+    bottom: 35%;
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
     text-shadow: 1px 1px 8px rgba(#000000, .8);
     font-weight: 600;
+
+    @media only screen and (max-width: 800px) {
+      bottom: 60%;
+    }
+  }
+
+  p {
+    text-align: center;
+    color: $darkgray;
   }
 
   figure {
@@ -30,13 +44,13 @@
   }
 </style>
 
-<header class="col-xs">
+<header>
   <h1>Trabalhe no Elo7</h1>
   <figure>
     <img alt="trabalhe no ELO7" src="{headerImage}">
   </figure>
 
   {#if description}
-    <p>{description}</p>
+    <p class="header__description">{description}</p>
   {/if}
 </header>

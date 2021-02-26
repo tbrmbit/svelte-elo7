@@ -16,7 +16,19 @@
     width: 100%;
     height: 100%;
     min-height: 200px;
-    min-width: 320px;
+
+    @media only screen and (max-width: 1024px) {
+      min-height: 300px;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 770px) {
+      width: 400px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: 300px;
+    }
   }
 </style>
 

@@ -12,7 +12,21 @@
 </script>
 
 <style lang="scss">
+  @import 'variables.scss';
 
+  .section-our-team {
+    h2 {
+      max-width: 250px;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: $darkgray;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 auto 40px auto;
+    }
+
+    &__item { margin: 0 auto; }
+  }
 </style>
 
 <section class="section-our-team">
