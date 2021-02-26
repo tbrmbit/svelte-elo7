@@ -9,9 +9,14 @@
     "start": "node __sapper__/build"
   },
   "dependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.5",
+    "babel-jest": "^26.6.3",
     "compression": "^1.7.1",
+    "jest": "^26.6.3",
     "polka": "next",
-    "sirv": "^1.0.0"
+    "sirv": "^1.0.0",
+    "svelte-test": "^0.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
