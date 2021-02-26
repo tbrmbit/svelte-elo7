@@ -4,12 +4,14 @@
 
 <style lang="scss">
   .section-banner {
+    margin: 50px;
+
     figure {
       margin: 0;
       padding: 0;
 
       img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
       }
     }

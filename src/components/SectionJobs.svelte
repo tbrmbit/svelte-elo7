@@ -56,6 +56,7 @@
       font-size: $fsize;
       color: $lightgreen;
       text-decoration: none;
+      padding-right: 10px;
 
       &:hover { text-decoration: underline; }
     }

@@ -3,8 +3,25 @@
 </script>
 
 <style lang="scss">
+  @import 'variables.scss';
+  $gap: 20px;
+
   .thumb-description {
-    
+    h3 {
+      font-size: 1.1em;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $darkgray;
+      margin-bottom: $gap;
+    }
+
+    img {
+      margin-bottom: $gap;
+    }
+
+    p {
+      color: $gray;
+    }
   }
 </style>
 
