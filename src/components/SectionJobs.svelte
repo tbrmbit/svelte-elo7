@@ -25,6 +25,21 @@
   $fsize: 1.2em;
 
   .section-jobs {
+    h2, h3 {
+      font-size: 1.4em;
+      font-weight: 600;
+      color: $darkgray;
+      margin-bottom: 30px;
+      text-transform: uppercase; 
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    h3 { font-size: 1.3em; }
+
     figure {
       margin: 0;
       padding: 0;
@@ -35,18 +50,14 @@
       }
     }
 
-    &__job-item {
-      padding-bottom: 10px;
-    }
+    &__job-item { padding-bottom: 10px; }
 
     &__job-name {
       font-size: $fsize;
       color: $lightgreen;
       text-decoration: none;
 
-      &:hover {
-        text-decoration: underline;
-      }
+      &:hover { text-decoration: underline; }
     }
 
     &__local {
@@ -54,9 +65,7 @@
       color: $mediumgray;
     }
 
-    &--right {
-      text-align: right;
-    }
+    &--right { text-align: right; }
   }
 </style>
 
