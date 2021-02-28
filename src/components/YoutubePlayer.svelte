@@ -2,7 +2,7 @@
   export let id_video;
 
   const ID_DEFAULT = 'UQ2-6gk9Szs';
-  let ytLink = `http://www.youtube.com/embed/${id_video ? id_video : ID_DEFAULT}?autoplay=1&origin=http://example.com`
+  let ytLink = `http://www.youtube.com/embed/${id_video ? id_video : ID_DEFAULT}?autoplay=0&origin=http://example.com`
 
 </script>
 

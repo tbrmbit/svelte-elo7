@@ -1,23 +1,9 @@
 <script>
   import { onMount } from "svelte";
+  import { fetchJobs as getJobs, jobs } from "../store/jobs.js";
 
-  const JOBS_API = 'http://www.mocky.io/v2/5d6fb6b1310000f89166087b';
-  let jobsList = [];
-
-  onMount(() => {
-    getJobs();
-  });
-
-  const getJobs = async () => {
-    const resp = await fetch(JOBS_API, { method: "GET" });
-    const jobs = await resp.json();
-    jobsList = jobs.vagas;
-    if (resp.ok) {
-  		return jobsList;
-		} else {
-			throw new Error(resp);
-		}
-  };
+  console.log($jobs);
+  onMount(getJobs);
 
 </script>
 
@@ -72,32 +58,25 @@
 
 <section class="section-jobs">
   <h2>Vagas em Aberto</h2>
-
-  {#await getJobs}
-    <p>carregando os jobs</p>
-  {:then data}
-    <div class="row">
-      <div class="col-lg-6">
-        <h3>Desenvolvimento</h3>
-      </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h3>Desenvolvimento</h3>
     </div>
-    {#each jobsList as job}
-      {#if job.ativa}
-        <div class="row section-jobs__job-item">
-          <div class="col-lg-6">
-            <a href={job.link} target="_blank" class="section-jobs__job-name">{job.cargo}</a>
-          </div>
-          <div class="col-lg-6 section-jobs--right">
-            <p class="section-jobs__local">{job.localizacao 
-                  ? `${job.localizacao.bairro} - ${job.localizacao.cidade}, ${job.localizacao.pais}` 
-                  : 'Remoto' 
-                }
-            </p>
-          </div>
+  </div>
+  {#each $jobs as job}
+    {#if job.ativa}
+      <div class="row section-jobs__job-item">
+        <div class="col-lg-6">
+          <a href={job.link} target="_blank" class="section-jobs__job-name">{job.cargo}</a>
         </div>
-      {/if}
-    {/each}
-  {:catch error}
-    <p>ooops... aconteceu um erro =[</p>
-  {/await}
+        <div class="col-lg-6 section-jobs--right">
+          <p class="section-jobs__local">{job.localizacao 
+                ? `${job.localizacao.bairro} - ${job.localizacao.cidade}, ${job.localizacao.pais}` 
+                : 'Remoto' 
+              }
+          </p>
+        </div>
+      </div>
+    {/if}
+  {/each}
 </section>
