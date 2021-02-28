@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+
   const JOBS_API = 'http://www.mocky.io/v2/5d6fb6b1310000f89166087b';
   let jobsList = [];
 
@@ -7,8 +8,8 @@
     getJobs();
   });
 
-  const getJobs = (async () => {
-    const resp = await fetch(JOBS_API);
+  const getJobs = async () => {
+    const resp = await fetch(JOBS_API, { method: "GET" });
     const jobs = await resp.json();
     jobsList = jobs.vagas;
     if (resp.ok) {
@@ -16,7 +17,7 @@
 		} else {
 			throw new Error(resp);
 		}
-  });
+  };
 
 </script>
 
